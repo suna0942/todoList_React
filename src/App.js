@@ -1,4 +1,4 @@
-import Calendar from "./components/Calendar";
+import ShowCalendar from "./components/ShowCalendar";
 import TodoList from "./components/TodoList";
 import GlobalStyle from "./components/GlobalStyle";
 import Layout from "./components/Layout";
@@ -8,7 +8,7 @@ function App() {
     <>
       <GlobalStyle />
       <Layout>
-        <Calendar />
+        <ShowCalendar />
         <TodoList />
       </Layout>
     </>

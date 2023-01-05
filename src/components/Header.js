@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components";
 const HeaderDayTime = styled.div`
   font-size: 24px;
   padding: 20px;
+  text-align: center;
   position: relative;
   &::after {
     content: "";
@@ -23,7 +24,7 @@ const HeaderDayTime = styled.div`
     &::after {
       width: 250px;
       height: 2px;
-      border-radius: 20%;
+      border-radius: 40%;
     }
   }
 `;

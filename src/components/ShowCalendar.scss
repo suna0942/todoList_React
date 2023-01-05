@@ -1,0 +1,47 @@
+$red: rgb(245, 82, 82);
+$orange: rgb(236, 141, 97);
+$yellow: rgb(255, 255, 125);
+$green: rgb(182, 243, 85);
+$blue: rgb(47, 140, 247);
+$violet: rgb(183, 61, 231);
+$white: #fff;
+$gray: rgb(211, 211, 211);
+$select: rgb(169 199 180);
+
+@mixin enabled-color($color) {
+  background: $color;
+  &:enabled:hover,
+  &:enabled:focus {
+    background: lighten($color, 10%);
+  }
+}
+
+.react-calendar
+  button:not(
+    .react-calendar__navigation__label,
+    .react-calendar__year-view__months
+  ) {
+  border-radius: 50%;
+}
+
+.calendarContainer {
+  width: 350px;
+  background-color: rgba($color: #fff, $alpha: 0.7);
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  .react-calendar {
+    border: none;
+    background: none;
+    font-family: "KorailRoundGothicBold";
+  }
+
+  .react-calendar__tile--now {
+    @include enabled-color($gray);
+    color: #fff;
+  }
+
+  .react-calendar__tile--active {
+    @include enabled-color($select);
+  }
+}
