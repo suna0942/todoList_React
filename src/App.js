@@ -1,5 +1,18 @@
+import Calendar from "./components/Calendar";
+import TodoList from "./components/TodoList";
+import GlobalStyle from "./components/GlobalStyle";
+import Layout from "./components/Layout";
+
 function App() {
-  return <div>TodoList 만들기 시작</div>;
+  return (
+    <>
+      <GlobalStyle />
+      <Layout>
+        <Calendar />
+        <TodoList />
+      </Layout>
+    </>
+  );
 }
 
 export default App;
